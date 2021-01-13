@@ -59,6 +59,7 @@ function App() {
   const getProperty = <T, K extends keyof T>(obj: T, key: K) => {
     console.info(obj[key]);
   };
+  console.info(3);
   // 在泛型中使用类类型
   // c:{new():T}里的'new'是Constructor Type Literal，下面new c()里的'new'是new operator，二者是不同的东西。
   // {new():T} 和 c:new()=>T是一样的，后者是前者的简写，意即c的类型是对象类型且这个对象包含返回类型是T的构造函数。
